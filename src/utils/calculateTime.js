@@ -25,6 +25,6 @@ function getPadezh(item, arrPadezh) {
     } else if ((item % 10 >= 2 && item % 10 <= 4) && (item % 100 < 10 || item % 100 >= 20)) {
         return arrPadezh[1];
     } else {
-        return arrPadezh[3];
+        return arrPadezh[2];
     }
 }
