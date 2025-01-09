@@ -14,7 +14,7 @@ const useTruncatedElement = ({ ref }) => {
                 setIsTruncated(false);
             }
         }
-    }, [ref.current]);
+    }, [ref]);
 
     return {
         isTruncated,

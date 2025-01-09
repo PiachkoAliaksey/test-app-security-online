@@ -1,5 +1,3 @@
-import { useState, Suspense } from 'react'
-
 import './App.css'
 import CardApplication from './components/CardApplication'
 
