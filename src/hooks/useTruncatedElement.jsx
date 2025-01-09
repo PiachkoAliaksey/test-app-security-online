@@ -1,6 +1,6 @@
 import { useState, useLayoutEffect } from "react";
 
-const useTruncatedElement = ({ ref }) => {
+const useTruncatedElement = ({ ref, data }) => {
     const [isTruncated, setIsTruncated] = useState(false);
     const [isReadingMore, setIsReadingMore] = useState(false);
 
@@ -14,7 +14,7 @@ const useTruncatedElement = ({ ref }) => {
                 setIsTruncated(false);
             }
         }
-    }, [ref]);
+    }, [ref, data]);
 
     return {
         isTruncated,

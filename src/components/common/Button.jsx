@@ -12,10 +12,4 @@ Button.propTypes = {
     children: PropTypes.node,
 };
 
-Button.defaultProps = {
-    title: '',
-    children: null,
-};
-
-
 export default Button

@@ -1,3 +1,6 @@
+const PADEZH_DAY = ['день', 'дня', 'дней'];
+const PADEZH_HOURS = ['час', 'часа', 'часов'];
+
 export function calculateTimeDifference(date1, date2) {
     const start = new Date(date1);
     const end = new Date(date2);
@@ -9,29 +12,19 @@ export function calculateTimeDifference(date1, date2) {
 
     if (differenceInSeconds < secondsInADay) {
         const hours = Math.floor(differenceInSeconds / secondsInAnHour);
-        return `${hours} ${getHoursPadezh(hours)}`;
+        return `${hours} ${getPadezh(hours,PADEZH_HOURS)}`;
     } else {
         const days = Math.floor(differenceInSeconds / secondsInADay);
-        return `${days} ${getDaysPadezh(days)}`;
+        return `${days} ${getPadezh(days,PADEZH_DAY)}`;
     }
 }
 
-function getHoursPadezh(hours) {
-    if (hours % 10 === 1 && hours % 100 !== 11) {
-        return 'час';
-    } else if ((hours % 10 >= 2 && hours % 10 <= 4) && (hours % 100 < 10 || hours % 100 >= 20)) {
-        return 'часа';
+function getPadezh(item, arrPadezh) {
+    if (item % 10 === 1 && item % 100 !== 11) {
+        return arrPadezh[0];
+    } else if ((item % 10 >= 2 && item % 10 <= 4) && (item % 100 < 10 || item % 100 >= 20)) {
+        return arrPadezh[1];
     } else {
-        return 'часов';
-    }
-}
-
-function getDaysPadezh(days) {
-    if (days % 10 === 1 && days % 100 !== 11) {
-        return 'день';
-    } else if ((days % 10 >= 2 && days % 10 <= 4) && (days % 100 < 10 || days % 100 >= 20)) {
-        return 'дня';
-    } else {
-        return 'дней';
+        return arrPadezh[3];
     }
 }
