@@ -46,7 +46,7 @@ const CardApplication = () => {
             <span className='border-t-[#DBDBDB] border-t-[1px]'></span>
 
             <div>
-                <p ref={ref} className={`${!isReadingMore && 'line-clamp-3'}`}>
+                <p ref={ref} className={`${!isReadingMore && 'line-clamp-3'} text-[14px]`}>
                     {data ? data.textApplication :
                         <>
                             <Skeleton variant='triangle' className='rounded-md mb-1' />
