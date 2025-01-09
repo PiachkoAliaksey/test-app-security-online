@@ -1,0 +1,18 @@
+{
+    "id": 1,
+    "numberApplication": "10000",
+    "dateCreation": "2025-01-05T14:48:00.000Z",
+    "dateControl": "2025-01-05T16:48:00.000Z",
+    "dateComplited": "2025-01-05T16:48:00.000Z",
+    "system": "СКУД",
+    "typeOfApplication": "Неисправность",
+    "object": {
+        "title": "Магазин '5 элемент'",
+        "city": "Минск",
+        "str": "Ленина,2"
+    },
+
+    "textApplication": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "status": "В работе",
+    "technological": true
+}
