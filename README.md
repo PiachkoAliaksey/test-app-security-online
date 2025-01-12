@@ -1,5 +1,23 @@
 # Краткая иснтрукция по работе с приложением
 
+## Начало работы
+
+Перед запуском приложения убедитесь, что на вашем компьютере установлено следующее:
+
+- Node.js (version 14 or higher)
+- npm (Node package manager)
+
+## Установка
+
+Клонировать репозиторий:
+
+`git clone` https://github.com/PiachkoAliaksey/test-app-security-online.git 
+или `git clone` git@github.com:PiachkoAliaksey/test-app-security-online.git
+
+## Перейдите в каталог проекта
+
+### `cd test-app-security-online`
+
 ## Доступные скрипты
 
 В каталоге проекта вы можете запустить:
